@@ -1,3 +1,38 @@
+1. una kay iconfigure sa database gamit ang wamp sa phpadmin ug create db name ng "student_announcements"
+
+2. php artisan migrate:fresh
+
+3. php artisan tinker
+
+4. then type inside sa tinker
+
+
+use Illuminate\Support\Facades\Hash;
+
+User::create([
+    'name' => 'System Admin',
+    'email' => 'admin@school.com',
+    'password' => Hash::make('admin123'),
+    'role' => 'admin',
+]);
+
+
+5. php artisan config:clear && php artisan cache:clear && php artisan route:clear && php artisan view:clear
+
+6. php artisan optimize
+
+7. php artisan serve
+
+8.then ang iya url kay "http://127.0.0.1:8000/admin/login"
+
+9. then log in 
+Email:       admin@school.com
+Password: admin123
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
